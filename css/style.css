@@ -1,0 +1,48 @@
+/* Reset y Mobile First */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; text-align: center; }
+
+/* Menú Sticky */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #007BFF;
+    padding: 1rem;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex; /* Uso de Flexbox */
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secciones Full Screen */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#inicio { background-color: #f4f4f4; }
+#app-clima { background-color: #e3f2fd; }
+
+/* Uso de Grid para pantallas grandes (Media Query) */
+@media (min-width: 768px) {
+    .clima-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 400px;
+    }
+}

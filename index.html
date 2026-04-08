@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App del clima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="scroll-link">Inicio</a></li>
+                <li><a href="#app-clima" class="scroll-link">Clima</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="app-clima">
+            <h2>Consulta una Ciudad</h2>
+            <div class="clima-container">
+                <input type="text" id="ciudad" placeholder="Ej: Santo Domingo">
+                <button id="buscar">Buscar</button>
+                <div id="resultado">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
